@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="1" name="Onlyfullstack Suite" parallel="tests" thread-count="1">
+    <test name="Functional Tests">
+        <groups>
+            <run>
+                <include name="functional-tests"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.onlyfullstack.service.TestNGAnnotationsTest"/>
+        </classes>
+    </test>
+</suite>
